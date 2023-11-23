@@ -1,0 +1,16 @@
+server:
+  port: 8022
+spring:
+  application:
+    name: rabbitmq-consumer
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: root
+    password: 111111
+    virtual-host: RootHost
+  # 防止 HashMap 消息转换错误
+#  amqp:
+#    deserialization:
+#      trust:
+#        all: true
